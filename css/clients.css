@@ -34,11 +34,17 @@
   box-sizing: border-box;
   height: 100%;
 }
-
+/* 
 .card:hover {
   border: 2px solid #007bff;
-  /* box-shadow: 10px 20px 50px  black; */
   transform: translateY(-3px);
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    border: 2px solid #007bff;
+    transform: translateY(-3px);
+  }
 }
 
 .card p {

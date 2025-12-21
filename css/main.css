@@ -23,18 +23,18 @@ body {
 }
 
 .home-page .header {
-  background: url("../assets/images/home/headerBg.png") center/cover no-repeat;
+  background: url("../assets/images/home/headerBg-new.png") center/cover no-repeat;
 }
 .about-page .header {
-  background: url("../assets/images/about/headerBg.png") center/cover no-repeat;
+  background: url("../assets/images/about/headerBg-new.png") center/cover no-repeat;
 }
 .service-page .header {
-  background: url("../assets/images/service/headerBg.png") center/cover
+  background: url("../assets/images/service/headerBg-new.png") center/cover
     no-repeat;
   height: 70vh;
 }
 .product-page .header {
-  background: url("../assets/images/product/products_header.png") center/cover
+  background: url("../assets/images/product/headerBg-new.png") center/cover
     no-repeat;
   height: 70vh;
 }

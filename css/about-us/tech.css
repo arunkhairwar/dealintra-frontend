@@ -1,6 +1,6 @@
 .tech-section {
   padding: 80px 5%;
-  background: url("../../assets/images/service/technologyUsed.png") center/cover
+  background: url("../../assets/images/service/technologies_used_bg.png") center/cover
     no-repeat;
   color: #f0f4ff;
   font-family: "Poppins", sans-serif;
@@ -9,15 +9,15 @@
 .tech-title {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
+  /* text-align: left; */
   margin-bottom: 10px;
   color: #a2d2ff;
 }
 
 .tech-subtitle {
-  text-align: center;
+  /* text-align: center; */
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
   font-size: 1rem;
   color: #cdd6f4;
 }

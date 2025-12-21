@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms and Conditions</title>
     <link rel="stylesheet" href="../css/termCondition.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
+    <header
+      style="background-color: black; position: sticky; top: 0; z-index: 100"
+    >
+      <nav class="navbar" style="background-color: black">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo" style="padding: 0.5rem 1rem">
+          <img src="../assets/images/logo.png" alt="logo" class="logo-icon" />
+          <h2 style="margin: 0px">Dealintra</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+        <div class="sidebar" id="sidebar">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
+        </div>
+      </nav>
+    </header>
     <div class="container">
       <h1>TERMS AND CONDITIONS</h1>
 
       <h2>1. Introduction</h2>
       <p>
-        Welcome to dealintra ("Company", "we", "our", "us"). These
-        Terms and Conditions ("Terms") govern your access to and use of our
-        website www.yourdomain.com, our software products, and related IT
-        services (collectively referred to as the "Services"). By accessing or
-        using any of our Services, you agree to be bound by these Terms. If you
-        do not agree, please do not use our Services.
+        Welcome to dealintra ("Company", "we", "our", "us"). These Terms and
+        Conditions ("Terms") govern your access to and use of our website
+        www.yourdomain.com, our software products, and related IT services
+        (collectively referred to as the "Services"). By accessing or using any
+        of our Services, you agree to be bound by these Terms. If you do not
+        agree, please do not use our Services.
       </p>
 
       <h2>2. Definitions</h2>
@@ -194,5 +225,7 @@
       <p>Email: support@yourdomain.com</p>
       <p>Phone: +91-XXXXXXXXXX</p>
     </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="../js/main.js"></script>
   </body>
 </html>

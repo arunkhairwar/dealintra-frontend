@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy</title>
     <link rel="stylesheet" href="../css/privacyPolicy.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
+    <header
+      style="background-color: black; position: sticky; top: 0; z-index: 1000"
+    >
+      <nav class="navbar" style="background-color: black">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo" style="padding: 0.5rem 1rem">
+          <img src="../assets/images/logo.png" alt="logo" class="logo-icon" />
+          <h2 style="margin: 0px">Dealintra</h2>
+        </div>
+        <ul class="nav-links" style="padding: 0.5rem 1rem; margin: 0;">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+        <div class="sidebar" id="sidebar">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
+        </div>
+      </nav>
+    </header>
     <section class="privacy-container">
       <h1>PRIVACY POLICY</h1>
 
@@ -207,5 +238,7 @@
         Phone: [+91-XXXXXXXXXX]
       </p>
     </section>
+    <div class="overlay" id="overlay"></div>
+    <script src="../js/main.js"></script>
   </body>
 </html>

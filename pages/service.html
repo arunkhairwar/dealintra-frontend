@@ -14,6 +14,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body class="service-page">
     <header class="header">
@@ -413,20 +421,7 @@
             </p>
           </div>
 
-          <form
-            action="https://formsubmit.co/ee59437ddc10992cbd1b6cd485e05ffe"
-            method="POST"
-            enctype="multipart/form-data"
-            class="contact-form"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New discussion application"
-            />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
+          <form class="contact-form" id="contact-form">
             <input
               name="FullName"
               type="text"
@@ -453,7 +448,10 @@
               placeholder="Type Description"
               required
             ></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit">
+              <span class="btn-text">Submit</span>
+              <!-- <span class="spinner" aria-hidden="true"></span> -->
+            </button>
           </form>
         </div>
       </section>
@@ -557,6 +555,8 @@
       </div>
     </footer>
     <div class="overlay" id="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../js/service.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/fetchCountry.js"></script>

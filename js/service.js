@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   viewButtons.forEach((btn) => {
     btn.addEventListener("click", function () {
-      //   window.location.href = "https://malkiati.com/";
       window.open("https://malkiati.com/", "_blank");
     });
   });

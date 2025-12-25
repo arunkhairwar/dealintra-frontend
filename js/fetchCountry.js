@@ -61,7 +61,7 @@ function bindEmailForm(formId) {
       console.error("EmailJS error:", error);
 
       showToastMessage({
-        message: "Fail to Submit Form.",
+        message: "Failed to Submit Form.",
         bgColor: "red",
         duration: 4000,
       });

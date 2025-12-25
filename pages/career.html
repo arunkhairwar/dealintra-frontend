@@ -13,6 +13,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body class="career-page">
     <header class="header">
@@ -308,25 +316,12 @@
           </ul>
         </div>
 
-        <form
-          action="https://formsubmit.co/ee59437ddc10992cbd1b6cd485e05ffe"
-          method="POST"
-          enctype="multipart/form-data"
-        >
-          <input type="hidden" name="_subject" value="New Job Application" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input
-            type="hidden"
-            name="_message"
-            value="You have received a new application. Details are below:"
-          />
-
+        <form id="apply-form">
           <div class="form-row">
             <div class="form-group">
               <label>First Name</label>
               <input
-                name="FirstName"
+                name="first_name"
                 title="First name is required"
                 type="text"
                 required
@@ -336,7 +331,7 @@
             <div class="form-group">
               <label>Last Name</label>
               <input
-                name="LastName"
+                name="last_name"
                 type="text"
                 placeholder="Last Name"
                 required
@@ -349,7 +344,7 @@
             <div class="form-group">
               <label>Email</label>
               <input
-                name="Email"
+                name="email"
                 type="email"
                 required
                 placeholder="name@gmail.com"
@@ -361,7 +356,7 @@
             <div class="form-group">
               <label>Contact No</label>
               <input
-                name="Mobile"
+                name="mobile"
                 minlength="10"
                 maxlength="10"
                 type="number"
@@ -373,7 +368,7 @@
             <div class="form-group">
               <label>Whatsapp No</label>
               <input
-                name="WhatsappNumber"
+                name="whatsapp"
                 minlength="10"
                 maxlength="10"
                 type="number"
@@ -387,7 +382,7 @@
           <div class="form-row">
             <div class="form-group">
               <label>Education</label>
-              <select name="Education" required>
+              <select name="education" required>
                 <option>UnderGrad / MBA</option>
                 <option>BTech</option>
                 <option>MTech</option>
@@ -395,7 +390,7 @@
             </div>
             <div class="form-group">
               <label>Yrs of Exp</label>
-              <select name="Experience" required>
+              <select name="experience" required>
                 <option>Fresher / 2+ Years exp</option>
                 <option>3-5 Years</option>
                 <option>5+ Years</option>
@@ -403,18 +398,18 @@
             </div>
           </div>
 
-          <div class="form-row">
+          <!-- <div class="form-row">
             <div class="form-group full-width">
               <label>Resume/CV</label>
               <input name="Resume" type="file" />
             </div>
-          </div>
+          </div> -->
 
           <div class="form-row">
             <div class="form-group full-width">
               <label>Note</label>
               <textarea
-                name="Note"
+                name="note"
                 placeholder="Upload your Resume"
                 required
               ></textarea>
@@ -434,7 +429,7 @@
             >
           </div>
 
-          <button type="submit" class="submit-btn">SUBMIT</button>
+          <button class="submit-btn" type="submit">SUBMIT</button>
         </form>
       </section>
     </main>
@@ -539,6 +534,8 @@
       </div>
     </footer>
     <div class="overlay" id="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/career.js"></script>
   </body>

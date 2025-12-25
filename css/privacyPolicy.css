@@ -23,19 +23,19 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.privacy-container h2 {
   font-size: 22px;
   margin-top: 25px;
   color: #222;
 }
 
-h3 {
+.privacy-container h3 {
   font-size: 18px;
   margin-top: 15px;
   color: #333;
 }
 
-p {
+.privacy-container p {
   line-height: 1.6;
   margin: 10px 0;
   color: #444;
